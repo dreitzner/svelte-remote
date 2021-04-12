@@ -7,7 +7,7 @@
 <svelte:head>
 	<title>🔴 Remote 📢</title>
 </svelte:head>
-
+<h1>Remote 📢</h1>
 {#each signals as signal}
 	<button on:click={() => setSignal(signal)}>
 		Set '{signal}'

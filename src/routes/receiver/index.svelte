@@ -23,26 +23,13 @@
 
 <svelte:window on:storage={listener} />
 
+<h1>Receiver 📡</h1>
+
 {#if signal}
-	<h1 out:fade>
+	<h2 out:fade>
 		{signal}
-	</h1>
+	</h2>
 {/if}
 
 <style>
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4rem;
-		font-weight: 100;
-		line-height: 1.1;
-		margin: 4rem auto;
-		max-width: 14rem;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			max-width: none;
-		}
-	}
 </style>

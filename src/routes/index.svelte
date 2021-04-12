@@ -26,7 +26,7 @@
 		background: blue;
 	}
 
-	h1 {
+	:global(h1) {
 		color: #ff3e00;
 		text-transform: uppercase;
 		font-size: 4rem;
@@ -37,7 +37,7 @@
 	}
 
 	@media (min-width: 480px) {
-		h1 {
+		:global(h1) {
 			max-width: none;
 		}
 	}
