@@ -2,4 +2,14 @@
 	import '../app.css';
 </script>
 
-<slot />
+<main>
+	<slot />
+</main>
+
+<style>
+	main {
+		text-align: center;
+		padding: 1em;
+		margin: 0 auto;
+	}
+</style>

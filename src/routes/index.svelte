@@ -1,24 +1,29 @@
 <script lang="ts">
-	import Counter from '$lib/Counter.svelte';
 </script>
 
 <svelte:head>
-	<title>Hello world!</title>
+	<title>Choose: 🔴 or 🔵 </title>
 </svelte:head>
 
-<main>
-	<h1>Hello world!</h1>
+<h1>Build with svelte kit.</h1>
+<h2>Choose:</h2>
 
-	<Counter />
-
-	<p>Visit <a href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte apps.</p>
-</main>
+<a class="bg-red" href="/remote" preload="true">Remote 📢</a>
+<a class="bg-blue" href="/receiver" preload="true">Receiver 📡</a>
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		margin: 0 auto;
+	a {
+		padding: .5em 2em;
+		text-decoration: none;
+		color: #fff;
+		border-radius: .2em;
+	}
+
+	.bg-red {
+		background: red;
+	}
+	.bg-blue {
+		background: blue;
 	}
 
 	h1 {
@@ -31,18 +36,8 @@
 		max-width: 14rem;
 	}
 
-	p {
-		max-width: 14rem;
-		margin: 2rem auto;
-		line-height: 1.35;
-	}
-
 	@media (min-width: 480px) {
 		h1 {
-			max-width: none;
-		}
-
-		p {
 			max-width: none;
 		}
 	}
