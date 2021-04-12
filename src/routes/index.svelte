@@ -2,7 +2,7 @@
 </script>
 
 <svelte:head>
-	<title>Choose: 🔴 or 🔵 </title>
+	<title>Choose: 🔴 or 🔵</title>
 </svelte:head>
 
 <h1>Build with svelte kit.</h1>
@@ -13,10 +13,10 @@
 
 <style>
 	a {
-		padding: .5em 2em;
+		padding: 0.5em 2em;
 		text-decoration: none;
 		color: #fff;
-		border-radius: .2em;
+		border-radius: 0.2em;
 	}
 
 	.bg-red {

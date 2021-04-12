@@ -1,13 +1,7 @@
 <script lang="ts">
-	const signals: string[] = [
-		'Slide 1',
-		'Slide 2',
-		'Slide 3',
-		'End',
-		'another signal',
-	];
-	
-	const setSignal = (signal: string): void => localStorage.setItem('signal', signal)
+	const signals: string[] = ['Slide 1', 'Slide 2', 'Slide 3', 'End', 'another signal'];
+
+	const setSignal = (signal: string): void => localStorage.setItem('signal', signal);
 </script>
 
 <svelte:head>
@@ -15,17 +9,17 @@
 </svelte:head>
 
 {#each signals as signal}
-<button on:click={() => setSignal(signal)}>
-	Set '{signal}'
-</button>
+	<button on:click={() => setSignal(signal)}>
+		Set '{signal}'
+	</button>
 {/each}
 
 <style>
 	button {
-		margin: .5rem;
-		padding: .5em 2em;
+		margin: 0.5rem;
+		padding: 0.5em 2em;
 		color: #fff;
-		border-radius: .2em;
+		border-radius: 0.2em;
 		background: red;
 		border: none;
 	}
@@ -33,5 +27,4 @@
 	button:nth-child(even) {
 		background: blue;
 	}
-
 </style>

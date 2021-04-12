@@ -6,8 +6,8 @@
 	const listener = () => {
 		const value = localStorage.getItem(storageKey);
 		if (!value) return;
-		
-		if (timeout) clearTimeout(timeout)
+
+		if (timeout) clearTimeout(timeout);
 
 		signal = value;
 		localStorage.removeItem(storageKey);
